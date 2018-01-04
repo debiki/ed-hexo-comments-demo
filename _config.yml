@@ -3,11 +3,11 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: Hexo
+title: A commenting system for Hexo
 subtitle:
 description:
-author: John Doe
-language:
+author: Magnus Lindberg
+language: en
 timezone:
 
 # URL
