@@ -12,6 +12,8 @@ Demo video:
 
 <iframe src="https://player.vimeo.com/video/249611399" width="684" height="385" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 
+<a href="/2018/01/03/kindest-species/">Here's a demo Hexo discussion.</a>
+
 
 ## Quick test if this is for you
 
@@ -23,7 +25,7 @@ Maybe you don't want to get a server and install, or sign up for our hosted serv
    ed_comments_server_url: https://comments.demo.ed.community
    ```
 
-2. Do real installation step 3 below, i.e. add the html for the comments.
+2. Do real installation step 3 (three) below, i.e. add the html for the comments.
 
 Now, regenerate your blog and look at the comment section that shoud appear below the blog posts. You can post test comments **but** they'll disappear later on some day. Currently the comment section background color is always white, but later on you'll be able to tweak how it looks.
 
@@ -47,6 +49,8 @@ Install this commenting system in three steps:
 
 3. Add this where you want the comments to appear:
    ```
+   TEST001
+
    <% if (!index && post.comments && config.ed_comments_server_url){ %>
    <section id="comments">
    <script>edCommentsServerUrl='<%= config.ed_comments_server_url %>';</script>
@@ -59,6 +63,10 @@ Install this commenting system in three steps:
    </section>
    <% } %>
    ```
+
+   For this blog, I placed it at the bottom of the file `themes/landscape/layout/_partial/article.ejs`.
+
+   Restart Hexo, reload the page in the browser. Do you see a comments section now? If so, remove `TEST001`. If not — do you see `TEST001`? If you *do* see `TEST001` but not the comments, then ask for help, see below. If you don't see `TEST001`, you added the comments code at the wrong place, or you're looking at the wrong page.
 
 4. Optionally, add a frontmatter `discussion_id: per-discussion-id` to your blog posts / articles.
    Then, you can change the URL to your posts, without the embedded discussion disappearing.

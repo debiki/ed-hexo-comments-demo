@@ -1,6 +1,7 @@
 ---
 title: "Demo discussion: Kind animals"
 date:   2018-01-03 0:02:00 +0000
+discussion_id: kindest-species
 ---
 
 Which is the most kind hearted species on planet Earth? And which animal would you want to keep as a pet?

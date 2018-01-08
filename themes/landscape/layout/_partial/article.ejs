@@ -30,9 +30,24 @@
       <%- partial('post/tag') %>
     </footer>
   </div>
+	<!--
   <% if (!index){ %>
     <%- partial('post/nav') %>
   <% } %>
+	-->
+
+   <% if (!index && post.comments && config.ed_comments_server_url){ %>
+   <section id="comments">
+   <div class="article-entry"><h2>Discuss this:</h2></div>
+   <script>edCommentsServerUrl='<%= config.ed_comments_server_url %>';</script>
+   <script async defer src="https://edm-49f8.kxcdn.com/-/ed-comments.min.js"></script>
+   <div class="ed-comments" data-discussion-id="<%= post.discussion_id %>" style="margin-top: 45px;">
+   <noscript>Please enable Javascript to view comments.</noscript>
+   <p style="margin-top: 25px; opacity: 0.9; font-size: 96%">Comments powered by
+   <a href="https://www.ed.community">Effective Discussions</a>.</p>
+   </div>
+   </section>
+   <% } %>
 </article>
 
 <% if (!index && post.comments && config.disqus_shortname){ %>
@@ -43,16 +58,5 @@
 </section>
 <% } %>
 
-   <% if (!index && post.comments && config.ed_comments_server_url){ %>
-   <section id="comments">
-   <script>edCommentsServerUrl='<%= config.ed_comments_server_url %>';</script>
-   <script async defer src="https://edm-49f8.kxcdn.com/-/ed-comments.min.js"></script>
-   <div class="ed-comments" data-discussion-id="<%= post.discussion_id %>" style="margin-top: 45px;">
-   <noscript>Please enable Javascript to view comments.</noscript>
-   <p style="margin-top: 25px; opacity: 0.9; font-size: 96%">Comments powered by
-   <a href="https://www.ed.community">Effective Discussions</a>.</p>
-   </div>
-   </section>
-   <% } %>
 
 

@@ -17,8 +17,8 @@ root: /
 permalink: :year/:month/:day/:title/
 permalink_defaults:
 
-# ed_comments_server_url: https://comments-for-ed-hexo-comments-demo-netlify-com.ed.community/
-ed_comments_server_url: https://comments.demo.ed.community
+ed_comments_server_url: https://comments-for-hexo-comments-demo.ed.community
+#ed_comments_server_url: https://comments.demo.ed.community
 
 
 
