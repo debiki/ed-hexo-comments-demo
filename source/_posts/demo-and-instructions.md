@@ -4,7 +4,7 @@ discussion_id: demo-and-inst-instrs
 date:   2018-01-04 0:02:00 +0000
 ---
 
-This is a new commenting system for Hexo and other static site generators. It's called ed-comments (ed = Effective Discussions) and it's [open source](https://github.com/debiki/ed-server/) so you can install it for free on your own server. There's hosting too, if you don't want to maintain your own server. No ads, no tracking. Lightweight, just 140 kb javascript (in comparison to Disqus' about 750 kb).
+This is a new commenting system for Hexo and other static site generators. It's called ed-comments (ed = Effective Discussions) but maybe I'll rename it to Uttertalk. It's [open source](https://github.com/debiki/ed-server/) so you can install it for free on your own server. There's hosting too, if you don't want to maintain your own server. No ads, no tracking. Lightweight, just 140 kb javascript (in comparison to Disqus' about 750 kb).
 
 This website is a static Hexo blog, with ed-comments below each blog post — look at the bottom of the pages.
 
@@ -14,10 +14,12 @@ Demo video:
 
 <a href="/2018/01/03/kindest-species/">Here's a demo Hexo discussion.</a>
 
+<a href="https://www.kajmagnus.blog/new-embedded-comments">Longer demo discussion (the one in the video).</a>
+
 
 ## Quick test if this is for you
 
-Maybe you don't want to get a server and install, or sign up for our hosted service, just to find out if ed-comments works for your blog / website? Here're two quick steps for you to try out ed-comments:
+Maybe you don't want to get a server and install, or sign up for our hosted service, just to find out if ed-comments works for your blog / website? Here're two quick steps for you to try out ed-comments
 
 1. Add this to your `_config.yml` file:
 
@@ -27,7 +29,7 @@ Maybe you don't want to get a server and install, or sign up for our hosted serv
 
 2. Do real installation step 3 (three) below, i.e. add the html for the comments.
 
-Now, regenerate your blog and look at the comment section that shoud appear below the blog posts. You can post test comments **but** they'll disappear later on some day. Currently the comment section background color is always white, but later on you'll be able to tweak how it looks.
+Now, regenerate your blog and look at the comment section that should appear below the blog posts. You can post test comments **but** they'll disappear later on some day. Currently the comment section background color is always white, but later on you'll be able to tweak how it looks.
 
 Are you satisfied with how it looks? If not, please tell us/me: <https://www.ed.community/forum/latest/support>.
 
@@ -72,6 +74,8 @@ Install this commenting system in three steps:
    Then, you can change the URL to your posts, without the embedded discussion disappearing.
 
 You can ask for help in [the support forum][support-cat], and [suggest ideas here][ideas-cat]. Or post a comment below on this page (test comments are fine too).
+
+In case you want a discussion forum and a real community, not just embedded comments: Ed-comments is actualy forum and question-answers software too, with Slack like chat features. And this commenting system integrates with the other stuff: people can `@mention` each other and use the same logins.
 
 
 [support-cat]: https://www.ed.community/forum/latest/support
