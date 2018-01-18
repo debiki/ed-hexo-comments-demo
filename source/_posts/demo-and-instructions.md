@@ -4,9 +4,9 @@ discussion_id: demo-and-inst-instrs
 date:   2018-01-04 0:02:00 +0000
 ---
 
-This is a new commenting system for Hexo and other static site generators. It's called ed-comments (ed = Effective Discussions) but maybe I'll rename it to Uttertalk. It's [open source](https://github.com/debiki/ed-server/) so you can install it for free on your own server. There's hosting too, if you don't want to maintain your own server. No ads, no tracking. Lightweight, just 140 kb javascript (in comparison to Disqus' about 750 kb).
+Talkyard is a new commenting system for Hexo and other static site generators. It's [open source](https://github.com/debiki/ed-server/) so you can install it for free on your own server. There's hosting too, if you don't want to maintain your own server. No ads, no tracking. Lightweight, just 140 kb javascript (in comparison to Disqus' about 750 kb).
 
-This website is a static Hexo blog, with ed-comments below each blog post — look at the bottom of the pages.
+This website is a static Hexo blog, with Talkyard comments below each blog post — look at the bottom of the pages.
 
 Demo video:
 
@@ -19,48 +19,48 @@ Demo video:
 
 ## Quick test if this is for you
 
-Maybe you don't want to get a server and install, or sign up for our hosted service, just to find out if ed-comments works for your blog / website? Here're two quick steps for you to try out ed-comments
+Maybe you don't want to get a server and install, or sign up for our hosted service, just to find out if Talkyard works for your blog / website? Here're two quick steps for you to try out Talkyard:
 
 1. Add this to your `_config.yml` file:
 
    ```
-   ed_comments_server_url: https://comments.demo.ed.community
+   talkyard_comments_server_url: https://comments.demo.talkyard.io
    ```
 
 2. Do real installation step 3 (three) below, i.e. add the html for the comments.
 
 Now, regenerate your blog and look at the comment section that should appear below the blog posts. You can post test comments **but** they'll disappear later on some day. Currently the comment section background color is always white, but later on you'll be able to tweak how it looks.
 
-Are you satisfied with how it looks? If not, please tell us/me: <https://www.ed.community/forum/latest/support>.
+Are you satisfied with how it looks? If not, please tell us/me: <https://www.talkyard.io/forum/latest/support>.
 
 
-If you like it, then do real installation step 1 below, and step 2 again — and this time, specify the address to your own ed-comments site. (Skip step 3, you've done it already.)
+If you like it, then do real installation step 1 below, and step 2 again — and this time, specify the address to your own Talkyard site. (Skip step 3, you've done it already.)
 
 
 ## Real installation
 
 Install this commenting system in three steps:
 
-1. Go to <https://www.ed.community> and click Create Community, choose Blog Comments and type your website address. Copy the address to your new embedded comments site.
+1. Go to <https://www.talkyard.io> and click Create Community, choose Blog Comments and type your website address. Copy the address to your new embedded comments site.
 
 2. In your Hexo site configuration, i.e. `_config.yml`, add this config value and paste the address:
 
    ```
-   ed_comments_server_url: https://comments-for-your-site.ed.community
+   talkyard_comments_server_url: https://comments-for-your-site.talkyard.io
    ```
 
 3. Add this where you want the comments to appear:
    ```
    TEST001
 
-   <% if (!index && post.comments && config.ed_comments_server_url){ %>
+   <% if (!index && post.comments && config.talkyard_comments_server_url){ %>
    <section id="comments">
-   <script>edCommentsServerUrl='<%= config.ed_comments_server_url %>';</script>
-   <script async defer src="<%= config.ed_comments_script_url || 'https://edc-49f8.kxcdn.com/-/ed-comments.min.js'  %>"></script>
-   <div class="ed-comments" data-discussion-id="<%= post.discussion_id %>" style="margin-top: 45px;">
+   <script>talkyardCommentsServerUrl='<%= config.talkyard_comments_server_url %>';</script>
+   <script async defer src="<%= config.talkyard_comments_script_url || 'https://tyc-49f8.kxcdn.com/-/talkyard-comments.min.js'  %>"></script>
+   <div class="talkyard-comments" data-discussion-id="<%= post.discussion_id %>" style="margin-top: 45px;">
    <noscript>Please enable Javascript to view comments.</noscript>
    <p style="margin-top: 25px; opacity: 0.9; font-size: 96%">Comments powered by
-   <a href="https://www.ed.community">Effective Discussions</a>.</p>
+   <a href="https://www.talkyard.io">Talkyard</a>.</p>
    </div>
    </section>
    <% } %>
@@ -75,9 +75,9 @@ Install this commenting system in three steps:
 
 You can ask for help in [the support forum][support-cat], and [suggest ideas here][ideas-cat]. Or post a comment below on this page (test comments are fine too).
 
-In case you want a discussion forum and a real community, not just embedded comments: Ed-comments is actualy forum and question-answers software too, with Slack like chat features. And this commenting system integrates with the other stuff: people can `@mention` each other and use the same logins.
+In case you want a discussion forum and a real community, not just embedded comments: Talkyard is actualy forum and question-answers software too, with Slack like chat features. And this commenting system integrates with the other stuff: people can `@mention` each other and use the same logins.
 
 
-[support-cat]: https://www.ed.community/forum/latest/support
-[ideas-cat]: https://www.ed.community/forum/latest/ideas
+[support-cat]: https://www.talkyard.io/forum/latest/support
+[ideas-cat]: https://www.talkyard.io/forum/latest/ideas
 

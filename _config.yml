@@ -3,7 +3,7 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: A commenting system for Hexo
+title: 'Talkyard: A commenting system for Hexo'
 subtitle:
 description:
 author: Magnus Lindberg
@@ -17,7 +17,7 @@ root: /
 permalink: :year/:month/:day/:title/
 permalink_defaults:
 
-ed_comments_server_url: https://comments-for-hexo-comments-demo.ed.community
+ed_comments_server_url: https://comments-for-hexo-comments-demo.talkyard.io
 #ed_comments_server_url: https://comments.demo.ed.community
 
 
