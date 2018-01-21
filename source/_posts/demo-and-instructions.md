@@ -6,7 +6,7 @@ date:   2018-01-04 0:02:00 +0000
 
 Talkyard is a new commenting system for Hexo and other static site generators. It's [open source](https://github.com/debiki/ed-server/) so you can install it for free on your own server. There's hosting too, if you don't want to maintain your own server. No ads, no tracking. Lightweight, just 140 kb javascript (in comparison to Disqus' about 750 kb).
 
-This website is a static Hexo blog, with Talkyard comments below each blog post — look at the bottom of the pages.
+This website is a static Hexo blog, with Talkyard comments below each blog post — look at the bottom of the pages. Talkyard is forum software too, with chat and Q&A features — so you can create a community for your website, integrated with the blog comments.
 
 Demo video:
 
@@ -56,7 +56,7 @@ Install this commenting system in three steps:
    <% if (!index && post.comments && config.talkyard_comments_server_url){ %>
    <section id="comments">
    <script>talkyardCommentsServerUrl='<%= config.talkyard_comments_server_url %>';</script>
-   <script async defer src="<%= config.talkyard_comments_script_url || 'https://tyc-49f8.kxcdn.com/-/talkyard-comments.min.js'  %>"></script>
+   <script async defer src="<%= config.talkyard_comments_script_url || 'https://cdn.talkyard.io/-/talkyard-comments.min.js' %>"></script>
    <div class="talkyard-comments" data-discussion-id="<%= post.discussion_id %>" style="margin-top: 45px;">
    <noscript>Please enable Javascript to view comments.</noscript>
    <p style="margin-top: 25px; opacity: 0.9; font-size: 96%">Comments powered by
@@ -73,9 +73,9 @@ Install this commenting system in three steps:
 4. Optionally, add a frontmatter `discussion_id: per-discussion-id` to your blog posts / articles.
    Then, you can change the URL to your posts, without the embedded discussion disappearing.
 
-You can ask for help in [the support forum][support-cat], and [suggest ideas here][ideas-cat]. Or post a comment below on this page (test comments are fine too).
+Again, note that Talkyard also is forum software, with chat and Q&A features — so you can create a community for your website, integrated with the blog comments.
 
-In case you want a discussion forum and a real community, not just embedded comments: Talkyard is actualy forum and question-answers software too, with Slack like chat features. And this commenting system integrates with the other stuff: people can `@mention` each other and use the same logins.
+You can ask for help in [the support forum][support-cat], and [suggest ideas here][ideas-cat]. Or post a comment below on this page (test comments are fine too).
 
 
 [support-cat]: https://www.talkyard.io/forum/latest/support
