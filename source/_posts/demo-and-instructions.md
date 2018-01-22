@@ -24,7 +24,7 @@ Maybe you don't want to get a server and install, or sign up for our hosted serv
 1. Add this to your `_config.yml` file:
 
    ```
-   talkyard_comments_server_url: https://comments.demo.talkyard.io
+   talkyard_comments_server_url: https://comments-demo.talkyard.io
    ```
 
 2. Do real installation step 3 (three) below, i.e. add the html for the comments.
@@ -56,7 +56,7 @@ Install this commenting system in three steps:
    <% if (!index && post.comments && config.talkyard_comments_server_url){ %>
    <section id="comments">
    <script>talkyardCommentsServerUrl='<%= config.talkyard_comments_server_url %>';</script>
-   <script async defer src="<%= config.talkyard_comments_script_url || 'https://cdn.talkyard.io/-/talkyard-comments.min.js' %>"></script>
+   <script async defer src="<%= config.talkyard_comments_script_url || 'https://cdn.talkyard.net/-/talkyard-comments.min.js' %>"></script>
    <div class="talkyard-comments" data-discussion-id="<%= post.discussion_id %>" style="margin-top: 45px;">
    <noscript>Please enable Javascript to view comments.</noscript>
    <p style="margin-top: 25px; opacity: 0.9; font-size: 96%">Comments powered by
