@@ -1,0 +1,6 @@
+# Redirect domain aliases to primary domain
+https://hexo-comments.demo.ed.community/* https://hexo-demo.talkyard.io/:splat 301!
+http://hexo-comments.demo.ed.community/* https://hexo-demo.talkyard.io/:splat 301!
+# Maybe will want to change back to hexo.demo so use temp redir, code 302.
+https://hexo.demo.talkyard.io/* https://hexo-demo.talkyard.io/:splat 302!
+http://hexo.demo.talkyard.io/* https://hexo-demo.talkyard.io/:splat 302!
