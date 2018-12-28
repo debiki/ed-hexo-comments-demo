@@ -17,7 +17,7 @@ root: /
 permalink: :year/:month/:day/:title/
 permalink_defaults:
 
-talkyard_server_url: https://comments-for-hexo-comments-demo.talkyard.io
+talkyard_server_url: https://comments-for-hexo-demo.talkyard.net
 
 
 
